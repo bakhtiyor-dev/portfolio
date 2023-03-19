@@ -1,5 +1,5 @@
 <script>
-import { mapState } from "vuex";
+import {mapState} from "vuex";
 import HireMeModal from "../HireMeModal.vue";
 import AppNavigation from "./AppNavigation.vue";
 
@@ -59,19 +59,8 @@ export default {
         <!-- Header logos -->
         <div>
           <NuxtLink to="/">
-            <img
-              v-if="this.$colorMode.value == 'dark'"
-              src="~/static/logo-light.svg"
-              class="w-36"
-              alt="Light Logo"
-            />
+            <h2 class="text-lg">Home</h2>
 
-            <img
-              v-else
-              src="~/static/logo-dark.svg"
-              alt="Color Logo"
-              class="w-36"
-            />
           </NuxtLink>
         </div>
 
@@ -180,26 +169,6 @@ export default {
       <div
         class="hidden sm:flex justify-between items-center flex-col md:flex-row"
       >
-        <!-- Hire me button -->
-        <div class="font-general-medium hidden md:block">
-          <button
-            class="
-              text-md
-              bg-indigo-500
-              hover:bg-indigo-600
-              text-white
-              shadow-sm
-              rounded-md
-              px-5
-              py-2.5
-            "
-            @click="showModal()"
-            aria-label="Hire Me Button"
-          >
-            Hire Me
-          </button>
-        </div>
-
         <!-- Theme switcher large screen -->
         <button
           @click="themeSwitcher"

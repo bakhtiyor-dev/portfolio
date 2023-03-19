@@ -102,9 +102,9 @@ export default {
           mt-2
         "
         @click="showModal()"
-        aria-label="Hire Me Button"
+        aria-label="Hire M"
       >
-        Hire Me
+        Hire
       </button>
     </div>
   </div>
