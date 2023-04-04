@@ -1,4 +1,4 @@
-import { v4 as uuidv4 } from "uuid";
+import {v4 as uuidv4} from "uuid";
 
 export const state = () => ({
   projectsHeading: "Projects Portfolio",
@@ -8,9 +8,8 @@ export const state = () => ({
       id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdb",
       title: "Humocommerce",
       category: "Web Application",
-      img: "images/humocommerce.png",
+      img: "images/humocommerce/humocommerce1.jpg",
       link: "https://humocommerce.com",
-      publishDate: "Nov 04, 2022",
       tag: "Web application",
       techTitle: "Tools & Technologies",
       detailsTitle: "Description",
@@ -18,17 +17,17 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "image",
-          img: "../images/humocommerce.png",
+          img: "../images/humocommerce/humocommerce1.jpg",
         },
         {
           id: uuidv4(),
           title: "image",
-          img: "../images/humocommerce2.png",
+          img: "../images/humocommerce/humocommerce2.jpg",
         },
         {
           id: uuidv4(),
           title: "image",
-          img: "../images/humocommerce3.png",
+          img: "../images/humocommerce/humocommerce3.jpg",
         },
       ],
 
@@ -36,43 +35,134 @@ export const state = () => ({
         "HTML",
         "CSS",
         "JavaScript",
+        "Vue.js",
         "PHP",
         "Laravel",
         "Shopify",
-        "GraphQL"
+        "GraphQL",
+        "MySQL",
+        "Redis",
+        "DigitalOcean",
+        "Telegram Bot API"
       ],
 
       projectDetails: [
         {
           id: uuidv4(),
           details:
-            "Go online without any hassles.\n" +
-            "Have your online store, sell your products online and expand your business in 14 days. Humocommerce provides you with a quick, affordable and convenient solution.",
+            "HumoCommerce is a leading e-commerce company that provides businesses with powerful tools for creating and managing online stores. ",
         },
+
         {
           id: uuidv4(),
           details:
-            "Quick solution. More sales. Trouble-free management. \n" +
-            "Humocommerce will help you start your online business without too much trouble and obstacles. You do the business and humocommerce makes it grow online",
+            "",
+        },
+      ],
+
+    },
+    {
+      id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdc",
+      title: "YOKI",
+      category: "Mobile Application",
+      img: "images/yoki/yoki1.jpg",
+      link: "https://play.google.com/store/apps/details?id=com.akademnashr.yoki&pli=1",
+      publishDate: "Nov 04, 2022",
+      tag: "Mobile application",
+      techTitle: "Tools & Technologies",
+      detailsTitle: "Description",
+      projectImages: [
+        {
+          id: uuidv4(),
+          title: "image",
+          img: "../images/yoki/yoki1.jpg",
         },
         {
           id: uuidv4(),
-          details:
-            "All the necessary solutions for online sales, especially online payments, unlimited categories, SEO, integrations and of course a modern and convenient look. You can trade not only through the website, but also through the mobile application and telegram bot. Humocommerce has everything in one!",
+          title: "image",
+          img: "../images/yoki/yoki2.jpg",
         },
         {
           id: uuidv4(),
-          details:
-            "Speed is one of the most important factors in business. Humocommerce will launch your online store in a short time, at a minimum price. Most importantly, it will have the same look and functionality as today's modern online stores.",
+          title: "image",
+          img: "../images/yoki/yoki3.jpg",
         },
+      ],
+
+      technologies: [
+        "Dart",
+        "Flutter",
+        "PHP",
+        "Laravel",
+        "REST API",
+        "MySql",
+        "Redis",
+        "TDD"
+      ],
+
+      projectDetails: [
+        {
+          id: uuidv4(),
+          details:
+            "YOKI - the first society of readers in Uzbekistan",
+        }
+      ],
+
+    },
+
+    {
+      id: "260d1271-f1f2-4bc9-a5eb-05a89c8ctcda",
+      title: "YOKI",
+      category: "Mobile Application",
+      img: "images/yoki/yoki1.jpg",
+      link: "",
+      publishDate: "Nov 04, 2022",
+      tag: "Mobile application",
+      techTitle: "Tools & Technologies",
+      detailsTitle: "Description",
+      projectImages: [
+        {
+          id: uuidv4(),
+          title: "image",
+          img: "../images/yoki/yoki1.jpg",
+        },
+        {
+          id: uuidv4(),
+          title: "image",
+          img: "../images/yoki/yoki2.jpg",
+        },
+        {
+          id: uuidv4(),
+          title: "image",
+          img: "../images/yoki/yoki3.jpg",
+        },
+      ],
+
+      technologies: [
+        "Dart",
+        "Flutter",
+        "PHP",
+        "Laravel",
+        "REST API",
+        "MySql",
+        "Redis",
+        "TDD"
+      ],
+
+      projectDetails: [
+        {
+          id: uuidv4(),
+          details:
+            "YOKI - the first society of readers in Uzbekistan",
+        }
       ],
 
     }
   ],
+
   clientsHeading: "Some of the brands I worked with",
 
-  clients: [
-  ],
+  clients: [],
 
   aboutMe: [
     {

@@ -58,7 +58,7 @@ export default {
           text-gray-400
         "
       >
-        A Backend PHP Developer & AI Enthusiast
+        A Backend PHP Developer
       </p>
       <div class="flex justify-center sm:block">
         <a

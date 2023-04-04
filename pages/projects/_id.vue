@@ -48,22 +48,6 @@ export default {
         <div class="flex">
           <div class="flex items-center mr-10">
             <i
-              data-feather="clock"
-              class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
-            ></i>
-            <span
-              class="
-                font-general-medium
-                ml-2
-                leading-none
-                text-primary-dark
-                dark:text-primary-light
-              "
-            >{{ project.publishDate }}</span
-            >
-          </div>
-          <div class="flex items-center mr-10">
-            <i
               data-feather="tag"
               class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
             ></i>
@@ -78,7 +62,7 @@ export default {
             >{{ project.tag }}</span
             >
           </div>
-          <a :href="project.link" class="flex items-center">
+          <a :href="project.link" target="_blank" class="flex items-center">
             <i
               data-feather="link"
               class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
@@ -99,13 +83,13 @@ export default {
       <!-- Project gallery -->
       <div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
         <div
-          class="mb-10 sm:mb-0"
+          class="mb-10 sm:mb-0 border-2 rounded-lg flex justify-center"
           v-for="projectImage in project.projectImages"
           :key="projectImage.id"
         >
           <img
             :src="projectImage.img"
-            class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
+            class="rounded-xl cursor-pointer max-h-96 shadow-lg sm:shadow-none"
           />
         </div>
       </div>

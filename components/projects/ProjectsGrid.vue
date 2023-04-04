@@ -1,6 +1,7 @@
 <script>
-import { mapState } from "vuex";
+import {mapState} from "vuex";
 import feather from "feather-icons";
+import * as url from "url";
 
 export default {
   data: () => {
@@ -10,6 +11,9 @@ export default {
     };
   },
   computed: {
+    url() {
+      return url
+    },
     ...mapState(["projectsHeading", "projectsDescription", "projects"]),
     filteredProjects() {
       if (this.selectedProject) {
@@ -131,7 +135,7 @@ export default {
             aria-label="Name"
           />
         </div>
-        <ProjectsFilter @change="selectedProject = $event" />
+        <ProjectsFilter @change="selectedProject = $event"/>
       </div>
     </div>
 
@@ -153,12 +157,7 @@ export default {
         aria-label="Single Project"
       >
         <NuxtLink :to="`/projects/${project.id}`">
-          <div>
-            <img
-              :src="project.img"
-              :alt="project.title"
-              class="rounded-t-xl border-none"
-            />
+          <div class="text-center h-96 bg-cover rounded-t-xl" :style="{backgroundImage: `url(${project.img})`}" >
           </div>
           <div class="text-center px-4 py-6">
             <p
@@ -178,7 +177,7 @@ export default {
                 text-lg text-ternary-dark
                 dark:text-ternary-light
               "
-              >{{ project.category }}</span
+            >{{ project.category }}</span
             >
           </div>
         </NuxtLink>
